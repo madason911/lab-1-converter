@@ -9,7 +9,7 @@ int main(int argc, char*  argv[]){
 
 
 
-  //If the number of arguments is 2, we perform the following
+  /*If the number of arguments is 2, we perform the following*/
 
 	if (argc==2){
         if (temp > -273.15){
@@ -34,7 +34,7 @@ int main(int argc, char*  argv[]){
                     printf("ERROR:below absolute zero for K\n");}
 
 	}
-	//If the number of arguments is greater than 2, perform the following
+	/*If the number of arguments is greater than 2, perform the following*/
 
 	else {
         if(*argv[2]=='C' || *argv[2]=='c'){
