@@ -3,14 +3,14 @@
 #include <dirent.h>
 #include <string.h>
 /*define the length of the string*/
-#define max-size 128
+#define max_size 128
 int main(int argc, char **argv)
 {
     /*To work with directories, you need to define a variable of type DIR*/
     DIR *qaz;
     /*create struct*/
     struct dirent *dp;
-    char filename[max-size];
+    char filename[max_size];
     if ( argc < 2 )
         strcpy(filename, ".");
     else
