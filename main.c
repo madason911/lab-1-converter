@@ -28,22 +28,20 @@
          int x;
          switch (znak) {
              case '\n':
+        case 1: goto RESULT;
           case ' ' : break;
-             case 1 : goto RESULT;
-             case '+' : 
+             case '+' :
            push(pop() + pop()); break;
-             case '-' : 
+             case '-' :
            push(-pop() + pop()); break;
-             case '*' : 
+             case '*' :
            push(pop() * pop()); break;
-             case '=' : 
+             case '=' :
            printf("Result = %d\n", pop()); break;
-             case 1 : 
-           goto RESULT;
              default:
                  ungetc(znak, stdin);
                  if (scanf("%d", &x) != 1) {
-                     fprintf("ERROR\n");
+                     printf("ERROR\n");
                      return -1;
                  } else {
                      push(x);
