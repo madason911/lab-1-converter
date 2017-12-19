@@ -1,1 +1,1 @@
-# lab-1-converter
+# labs
