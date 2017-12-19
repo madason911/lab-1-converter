@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include <dirent.h>
 #include <string.h>
+
+
+
 /*define the length of the string*/
 #define max_size 128
 int main(int argc, char **argv)
