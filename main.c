@@ -36,6 +36,8 @@
            push(-pop() + pop()); break;
              case '*' :
            push(pop() * pop()); break;
+             case '/' :
+           push(pop() / pop()); break;
              case '=' :
            printf("Result = %d\n", pop()); break;
              default:
