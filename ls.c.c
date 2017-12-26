@@ -15,12 +15,10 @@ int main(int argc, char **argv)
     struct dirent *dp;
     char filename[max_size];
     if ( argc < 2 )
-        strcpy(filename, ".");
-    else
-        strcpy(filename, argv[1]);
-    printf("%s\n\n", filename);
+        argv[1] = ".";
+
     /*open directories*/
-    qaz=opendir(filename);
+    qaz=opendir(argv[1]);
     while( (dp=readdir(qaz)) != NULL )
             printf("%s\n", dp->d_name);
     /*close directories*/
