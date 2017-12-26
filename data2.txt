@@ -1,0 +1,1 @@
+To work with directories, you need to define a variable of type DIR*
